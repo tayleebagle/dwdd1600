@@ -1,0 +1,117 @@
+body {
+    font-family: "Rubik", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;  
+}
+
+/*Header Stuff Here*/
+header {
+    background-color: #e5be80;
+    padding: 1rem 2vw;
+}
+header h1{
+    margin: 0;
+    color: #243547;
+}
+header p{
+    margin: 0;
+    color: #243547;
+    letter-spacing: .5px;
+    font-weight: 500;
+}
+
+/*Navigation Stuff Here*/
+nav {
+    background-color: #ba7432;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0 2vw;
+    margin: 0;
+    display: flex;
+}
+nav a {
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #243547;
+    font-weight: 700;
+    display: block;
+    padding: .83rem 2rem;
+}
+nav li.active a {
+    background-color: #243547;
+    color: #ba7432;
+    padding: 1rem 2vw;
+}
+nav a:hover {
+    color: #fff;
+}
+
+/*Main Stuff Here*/
+main {
+    padding: 1rem 2vw;
+}
+main h1 {
+    color: #4a6e92;
+}
+main h2 {
+    color: #243547;
+    margin-bottom: .2rem;
+}
+main p {
+    color: #243547;
+    margin: 0 0 .3rem 0;
+    padding-bottom: .5rem;
+    font-weight: 450;
+}
+main ol {
+    padding: 0 4vw;
+    color: #243547;
+    font-weight: 450;
+}
+main dl dt {
+    color: #4a6e92;
+    font-weight: 700;
+}
+main dl dd {
+    color: #243547;
+    font-weight: 450;
+}
+main ul {
+    list-style-type: square;
+    color: #243547;
+}
+main ul li {
+    line-height: 125%;
+    margin-bottom: .5rem;
+    font-size: .9rem;
+    font-weight: 450;
+}
+main address {
+    font-style: normal;
+    color: #243547;
+    background-color: #ba7432;
+    padding: .5rem;
+    width: 15rem;
+    border: 2px solid #243547 ;
+    border-radius: .8rem;
+}
+main a {
+    color: #243547;
+}
+main a:hover {
+    color: #4a6e92;
+}
+
+/*Footer Stuff Here*/
+footer {
+    background-color: #e5be80;
+    text-align: center;
+    color: #243547;
+    padding: 1rem 0;
+    font-size: .8rem;
+}
+footer a {
+    color: #243547;
+}
