@@ -7,7 +7,7 @@ body {
 
 /*Header Stuff Here*/
 header {
-    background-color: #e5be80;
+    background-color: #e8d9A1;
     padding: 1rem 2vw;
 }
 header h1{
@@ -23,7 +23,7 @@ header p{
 
 /*Navigation Stuff Here*/
 nav {
-    background-color: #ba7432;
+    background-color: #dfC35d;
 }
 nav ul {
     list-style-type: none;
@@ -41,7 +41,7 @@ nav a {
 }
 nav li.active a {
     background-color: #243547;
-    color: #ba7432;
+    color: #dfC35d;
     padding: 1rem 2vw;
 }
 nav a:hover {
@@ -91,7 +91,7 @@ main ul li {
 main address {
     font-style: normal;
     color: #243547;
-    background-color: #ba7432;
+    background-color: #dfC35d;
     padding: .5rem;
     width: 15rem;
     border: 2px solid #243547 ;
@@ -106,7 +106,7 @@ main a:hover {
 
 /*Footer Stuff Here*/
 footer {
-    background-color: #e5be80;
+    background-color: #e8d9A1;
     text-align: center;
     color: #243547;
     padding: 1rem 0;
