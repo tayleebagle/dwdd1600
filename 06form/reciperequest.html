@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Bagley Everyday Recipes: Sides</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <meta name="description" content="Different easy recipes anyone can use">
+        <meta name="author" content="Taylee Bagley">
+        <link rel="stylesheet" href="recipes.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+        
+        
+    </head>
+    <body>
+        <!-- Start of the page header -->
+        <header>
+            <h1>Bagley Recipes</h1>
+            <p>Simple Recipes for You</p>
+        </header>
+        <!-- Start of the page navigation -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="appetizers.html">Appetizers</a></li>
+                <li><a href="sides.html">Sides</a></li>
+                <li><a href="maindishes.html">Main Dishes</a></li>
+                <li><a href="soupsandsalads.html">Soups and Salads</a></li>
+                <li><a href="desserts.html">Desserts</a></li>
+                <li class="active"><a href="reciperequest.html">Request a Recipe</a></li>
+
+            </ul>
+        </nav>
+        <!-- Start of the page content -->
+        <main>
+            <h1>Request a Recipe</h1>
+            <form method="get" class="recipeform" action="thanks.html">
+            <fieldset>
+            <legend>Contact and Recipe Information</legend>
+            <label>First Name*<input type="text" name="fname" required></label>
+            <label>Last Name*<input type="text" name="lname" required></label>
+            <label>Recipe Name*<input type="text" name="rname" required></label>
+            <label>Cell Number*<input type="tel" name="phone" required placeholder="987-555-1234"></label>
+            <label>Email*<input type="email" name="email" required placeholder="example@email.com"></label>
+            </fieldset>
+
+            <fieldset>
+            <legend>Recipe Type</legend>
+                <label><input type="radio" name="type" value="appetizer">Appetizer</label>
+                <label><input type="radio" name="type" value="dessert">Dessert</label>
+                <label><input type="radio" name="type" value="maindish">Main Dish</label>
+                <label><input type="radio" name="type" value="side">Side</label>
+                <label><input type="radio" name="type" value="soup">Soup</label>
+                <label><input type="radio" name="type" value="salad">Salad</label>
+            </fieldset>
+
+            <fieldset>
+            <legend>Reason For Interest</legend>
+                <label><input type="checkbox" name="favorite" value="selected">Favorite</label>
+                <label><input type="checkbox" name="new" value="selected">Want to try a new recipe</label>
+                <label><input type="checkbox" name="easy" value="selected">Need an easier recipe</label>
+                <label><input type="checkbox" name="share" value="selected">Tried it, loved it, and want to share it</label>
+                <label>Have a recipe already?
+                <select name="availablerecipe">
+                    <option value="none">Please Select</option>
+                    <option value="norecipe">No, I do not have a recipe</option>
+                    <option value="yesrecipe">Yes, I do have a recipe</option>
+                    <option value="notsure">I did have a recipe but cannot find it</option>
+                </select>
+                </label>
+            </fieldset>
+
+            <label>Comments
+                <textarea name="comments" placeholder="Add your recipe or any aditional comments here"></textarea>
+            </label>
+
+            <input type="submit" value="Send Recipe Request">
+            </form>
+        
+        </main>
+        <!-- Start of the page footer -->
+        <footer>
+            <p>&copy; 2024 &bull; Taylee Bagley &bull; <a href="mailto:tayleebagle@gmail.com">Eamil Us</a></p>
+        </footer>
+    </body>
+</html>
