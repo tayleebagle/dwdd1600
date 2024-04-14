@@ -1,0 +1,263 @@
+/*prevent problems with different browsers*/
+*{box-sizing: border-box;}
+
+body {
+    font-family: "Rubik", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;  
+}
+
+/*Header Stuff Here*/
+header {
+    background-color: #e8d9A1;
+    padding: 1rem 2vw;
+    display: flex;
+    align-items: flex-end;
+}
+header div {
+    padding-left: 1vw;
+}
+header h1{
+    margin: 0;
+    color: #243547;
+}
+header p{
+    margin: 0;
+    color: #243547;
+    letter-spacing: .5px;
+    font-weight: 500;
+}
+
+/*Navigation Stuff Here*/
+@media only screen and (max-width: 968px) {
+    nav ul {
+        margin: 0;
+        padding: 0 2vw;
+        list-style-type: none;
+    }
+    nav a {
+        display: block;
+        padding: .8rem;
+        text-decoration: none;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        border-bottom: solid 1px #aaa;
+        color: #243547;
+        background-color: #dfC35d;
+        border-radius: 5px;
+    }
+    nav .active a {
+        background-color: #243547;
+        background-image: linear-gradient(#243547,#1d2936);
+        color: #dfC35d;
+        
+    }
+}
+
+/*end of the small media query*/
+@media only screen and (min-width: 969px) {
+    nav {
+        background-color: #dfC35d;
+    }
+    nav ul {
+        list-style-type: none;
+        padding: 0 2vw;
+        margin: 0;
+        display: flex;
+    }
+    nav a {
+        font-size: 1.3rem;
+        text-decoration: none;
+        color: #243547;
+        font-weight: 700;
+        display: block;
+        padding: .83rem 2rem;
+    }
+    nav li.active a {
+        background-color: #243547;
+        color: #dfC35d;
+        padding: 1rem 2vw;
+    }
+    nav a:hover {
+        color: #fff;
+    }
+}
+
+/*end of the wide media query*/
+
+
+/*Main Stuff Here*/
+main {
+    padding: 1rem 2vw;
+}
+main h1 {
+    color: #4a6e92;
+}
+main h2 {
+    color: #243547;
+    margin-bottom: .2rem;
+}
+main p {
+    color: #243547;
+    margin: 0 0 .3rem 0;
+    padding-bottom: .5rem;
+    font-weight: 450;
+}
+main ol {
+    padding: 0 4vw;
+    color: #243547;
+    font-weight: 450;
+}
+main dl dt {
+    color: #4a6e92;
+    font-weight: 700;
+}
+main dl dd {
+    color: #243547;
+    font-weight: 450;
+}
+main ul {
+    list-style-type: square;
+    color: #243547;
+}
+main ul li {
+    line-height: 125%;
+    margin-bottom: .5rem;
+    font-size: .9rem;
+    font-weight: 450;
+}
+main address {
+    font-style: normal;
+    color: #243547;
+    background-color: #dfC35d;
+    padding: .5rem;
+    width: 15rem;
+    border: 2px solid #243547 ;
+    border-radius: .8rem;
+}
+main a {
+    color: #243547;
+}
+main a:hover {
+    color: #4a6e92;
+}
+.cookinghero {
+    width: 100%;
+    margin: 0;
+}
+.cookinghero img {
+    width: 100%;
+    height: auto;
+}
+
+figure.wrapped {
+    width: 30%;
+    margin:0 0 0 2%;
+    float: right;
+}
+figure.wrapped img {
+    width: 100%;
+    height: auto;
+}
+figure.wrapped figcaption {
+    text-align: center;
+    font-size: .8rem;
+    color: #243547;
+}
+
+div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+div.gallery figure {
+    margin: .5rem 2% 0 0;
+    
+}
+div.gallery figcaption {
+    text-align: center;
+    font-size: .8rem;
+    color: #243547;
+}
+div.gallery figure:hover {
+    box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.3);
+}
+
+.recipeform fieldset {
+    border: 1.5px solid #243547;
+    border-radius: 3px;
+    margin-bottom: 1.5rem;
+}
+.recipeform legend {
+    color: #243547;
+    font-size: .9rem;
+}
+.recipeform label {
+    margin: .5rem;
+}
+.recipeform label, .recipeform select, .recipeform [type=text], .recipeform [type=tel], .recipeform [type=email], .recipeform textarea {
+    display: block;
+}
+
+.recipeform [type=text], .recipeform select, .recipeform [type=tel], .recipeform [type=email], .recipeform textarea {
+    border: solid 1.5px #41556b;
+    padding: .3rem;
+    width: 250px;
+    border-radius: .3rem;
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+}
+.recipeform textarea {
+    height: 6rem;
+}
+.recipeform :required {
+    background-color: #4a6e926b;
+}
+.recipeform [type=submit] {
+    background-color: #243547;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    color: #fff;
+    margin: 1rem 0 0 1vw;
+}
+
+table.measuring-conversions {
+    width: 100%;
+    border-collapse: collapse;
+}
+table.measuring-conversions th {
+    background-color: #243547;
+    color: white;
+    padding: .5rem 2vw;
+    text-align: left;
+}
+table.measuring-conversions td {
+    color: #4a6e92;
+    padding: .4rem 2vw;
+}
+table.measuring-conversions tr:nth-child(odd) {
+    background-color: #e0e0e0;
+}
+table.measuring-conversions tr:hover {
+    background-color: #dfc35dbe;
+}
+
+/*Footer Stuff Here*/
+footer {
+    background-color: #e8d9A1;
+    text-align: center;
+    color: #243547;
+    padding: 1rem 0;
+    font-size: .8rem;
+    clear: both;
+}
+footer a {
+    color: #243547;
+}
+
+header, main, nav, footer {
+    max-width: 64rem;
+    margin: 0 auto;
+}
