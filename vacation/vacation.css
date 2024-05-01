@@ -1,0 +1,271 @@
+/*prevent problems with different browsers*/
+*{box-sizing: border-box;}
+
+body {
+    font-family: "Roboto Flex", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;  
+}
+
+/*Header Stuff Here*/
+header {
+    background-color: white;
+    padding: 1rem 2vw;
+    display: flex;
+    align-items: flex-end;
+}
+header div {
+    padding-left: 1vw;
+}
+header h1{
+    margin: 0;
+    color: #364c75;
+}
+header p{
+    margin: 0;
+    color: #364c75;
+    letter-spacing: .5px;
+    font-weight: 500;
+}
+
+/*Navigation Stuff Here*/
+@media only screen and (max-width: 968px) {
+    nav ul {
+        margin: 0;
+        padding: 0 2vw;
+        list-style-type: none;
+    
+    }
+    nav a {
+        display: block;
+        padding: .8rem;
+        text-decoration: none;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        border-bottom: solid 1px #aaa;
+        color: #b7d1e0;
+        background-color: #364c75;
+        border-radius: 5px;
+    }
+    nav .active a {
+        background-color: #b7d1e0;
+        background-image: linear-gradient(#b7d1e0,#8aadc2);
+        color: #364c75;
+        
+    }
+    nav a:hover {
+        color: #6A9318;
+    }
+}
+
+/*end of the small media query*/
+@media only screen and (min-width: 969px) {
+    nav {
+        background-color: #364c75;
+    }
+    nav ul {
+        list-style-type: none;
+        padding: 0 2vw;
+        margin: 0;
+        display: flex;
+    }
+    nav a {
+        font-size: 1.3rem;
+        text-decoration: none;
+        color: #b7d1e0;
+        font-weight: 700;
+        display: block;
+        padding: .83rem 2rem;
+    }
+    nav li.active a {
+        background-color: #b7d1e0;
+        color: #364c75;
+        padding: 1rem 2vw;
+    }
+    nav a:hover {
+        color: #6A9318;
+    }
+}
+
+/*end of the wide media query*/
+
+
+/*Main Stuff Here*/
+main {
+    padding: 1rem 2vw;
+}
+main h1 {
+    color: #6A9318;
+}
+main h2 {
+    color: #364C75;
+    margin-bottom: .2rem;
+}
+main p {
+    color: #364C75;
+    margin: 0 0 .3rem 0;
+    padding-bottom: .5rem;
+    font-weight: 450;
+}
+main ol {
+    padding: 0 4vw;
+    color: #364C75;
+    font-weight: 450;
+}
+main dl dt {
+    color: #6A9318;
+    font-weight: 700;
+}
+main dl dd {
+    color: #364C75;
+    font-weight: 450;
+}
+main ul {
+    list-style-type: square;
+    color: #364C75;
+}
+main ul li {
+    line-height: 125%;
+    margin-bottom: .5rem;
+    font-size: .9rem;
+    font-weight: 450;
+}
+main address {
+    font-style: normal;
+    color: #364C75;
+    background-color: #6A9318c7;
+    padding: .5rem;
+    width: 15rem;
+    border: 2px solid #364C75 ;
+    border-radius: .8rem;
+}
+main a {
+    color: #364C75;
+}
+main a:hover {
+    color: #CF4B27;
+}
+.norway {
+    width: 100%;
+    margin: 0;
+}
+.norway img {
+    width: 100%;
+    height: auto;
+}
+
+figure.wrapped {
+    width: 30%;
+    margin:0 0 0 2%;
+    float: right;
+}
+figure.wrapped img {
+    width: 100%;
+    height: auto;
+}
+figure.wrapped figcaption {
+    text-align: center;
+    font-size: .8rem;
+    color: #364C75;
+}
+
+div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+div.gallery figure {
+    margin: .5rem 2% 2% 0;
+    
+}
+div.gallery figcaption {
+    text-align: center;
+    font-size: .8rem;
+    color: #364C75;
+}
+div.gallery figure:hover {
+    box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.3);
+}
+
+div.packages {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+div.packages figure {
+    margin: .5rem 2% 2% 0;
+    
+}
+div.packages figcaption {
+    text-align: left;
+    font-size: 1rem;
+    color: #364C75;
+}
+div.packages figure:hover {
+    box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.3);
+}
+div.packages p {
+    text-align: left;
+    color: #364C75;
+    border: 3px solid #6A9318;
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+.packagerequest fieldset {
+    border: 1.5px solid #364C75;
+    border-radius: 4px;
+    margin-bottom: 1.5rem;
+}
+.packagerequest legend {
+    color: #364C75;
+    font-size: .9rem;
+}
+.packagerequest label {
+    margin: .5rem;
+}
+.packagerequest label, .packagerequest select, .packagerequest [type=text], .packagerequest [type=tel], .packagerequest [type=email], .packagerequest textarea {
+    display: block;
+}
+
+.packagerequest [type=text], .packagerequest select, .packagerequest [type=tel], .packagerequest [type=email], .packagerequest textarea {
+    border: solid 1.5px #364C75;
+    padding: .3rem;
+    width: 250px;
+    border-radius: .3rem;
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+}
+.packagerequest textarea {
+    height: 6rem;
+}
+.packagerequest :required {
+    background-color: #b7d1e0;
+}
+.packagerequest [type=submit] {
+    background-color: #364C75;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    color: #fff;
+    margin: 1rem 0 0 1vw;
+}
+
+
+/*Footer Stuff Here*/
+footer {
+    background-color: #cf4b27c9;
+    text-align: center;
+    color: #364C75;
+    padding: 1rem 0;
+    font-size: .8rem;
+    clear: both;
+}
+footer a {
+    color: #364C75;
+}
+
+header, main, nav, footer {
+    max-width: 64rem;
+    margin: 0 auto;
+}
